@@ -9,14 +9,11 @@
     :root {
       --bcg-green: #1e7a3d;
       --text: #ffffff;
-
       --hover-bg: rgba(255, 255, 255, 0.12);
       --hover-bg-active: rgba(255, 255, 255, 0.18);
-
       --menu-bg: #ffffff;
       --menu-text: #333333;
       --menu-hover: #f7f7f7;
-
       --bar-height: 56px;
       --btn-pad-x: 22px;
     }
@@ -108,16 +105,13 @@
       top: 100%;
       left: 0;
       margin-top: 8px;
-
       min-width: 240px;
       max-height: 420px;
       overflow-y: auto;
-
       background: var(--menu-bg);
       color: var(--menu-text);
       border-radius: 4px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.22);
-
       display: none;
       z-index: 9999;
     }
@@ -151,7 +145,7 @@
   <nav class="navbar">
     <div class="nav-left">
       <div class="nav-btn logo" id="homeBtn" title="Home">
-        <img src="BCG-logo.svg" alt="BCG">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80'%3E%3Ctext x='10' y='60' font-family='Arial' font-size='48' font-weight='bold' fill='white'%3EBCG%3C/text%3E%3C/svg%3E" alt="BCG">
       </div>
 
       <div class="nav-btn nav-item" id="navigateBtn" title="Navigate">
@@ -176,7 +170,8 @@
     </div>
   </nav>
 
-  <script src="./tableau.extensions.1.latest.js"></script>
+  <!-- Load Tableau Extensions API from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tableau/extensions-api-types@1.10.0/tableau.extensions.1.latest.min.js"></script>
   <script src="./navigation.js"></script>
 </body>
 </html>
